@@ -172,22 +172,22 @@ FEATURES = {
     'CUSTOM_COURSES_EDX': False,
 
     # Toggle to enable certificates of courses on dashboard
-    'ENABLE_VERIFIED_CERTIFICATES': False,
+    'ENABLE_VERIFIED_CERTIFICATES': True,
 
     # for load testing
     'AUTOMATIC_AUTH_FOR_TESTING': False,
 
     # Toggle the availability of the shopping cart page
-    'ENABLE_SHOPPING_CART': False,
+    'ENABLE_SHOPPING_CART': True,
 
     # Toggle storing detailed billing information
     'STORE_BILLING_INFO': False,
 
     # Enable flow for payments for course registration (DIFFERENT from verified student flow)
-    'ENABLE_PAID_COURSE_REGISTRATION': False,
+    'ENABLE_PAID_COURSE_REGISTRATION': True,
 
     # Enable the display of cosmetic course price display (set in course advanced settings)
-    'ENABLE_COSMETIC_DISPLAY_PRICE': False,
+    'ENABLE_COSMETIC_DISPLAY_PRICE': True,
 
     # Automatically approve student identity verification attempts
     'AUTOMATIC_VERIFY_STUDENT_IDENTITY_FOR_TESTING': False,
@@ -198,14 +198,14 @@ FEATURES = {
 
     # Grade calculation started from the instructor dashboard will write grades
     # CSV files to the configured storage backend and give links for downloads.
-    'ENABLE_GRADE_DOWNLOADS': False,
+    'ENABLE_GRADE_DOWNLOADS': True,
 
     # whether to use password policy enforcement or not
     'ENFORCE_PASSWORD_POLICY': True,
 
     # Give course staff unrestricted access to grade downloads (if set to False,
     # only edX superusers can perform the downloads)
-    'ALLOW_COURSE_STAFF_GRADE_DOWNLOADS': False,
+    'ALLOW_COURSE_STAFF_GRADE_DOWNLOADS': True,
 
     'ENABLED_PAYMENT_REPORTS': [
         "refund_report",
@@ -230,7 +230,7 @@ FEATURES = {
     'ALLOW_WIKI_ROOT_ACCESS': True,
 
     # Turn on/off Microsites feature
-    'USE_MICROSITES': False,
+    'USE_MICROSITES': True,
 
     # Turn on third-party auth. Disabled for now because full implementations are not yet available. Remember to syncdb
     # if you enable this; we don't create tables by default.
@@ -273,7 +273,7 @@ FEATURES = {
     # Show a section in the membership tab of the instructor dashboard
     # to allow an upload of a CSV file that contains a list of new accounts to create
     # and register for course.
-    'ALLOW_AUTOMATED_SIGNUPS': False,
+    'ALLOW_AUTOMATED_SIGNUPS': True,
 
     # Enable display of enrollment counts in instructor dash, analytics section
     'DISPLAY_ANALYTICS_ENROLLMENTS': True,
@@ -297,10 +297,10 @@ FEATURES = {
     'MODE_CREATION_FOR_TESTING': False,
 
     # Courseware search feature
-    'ENABLE_COURSEWARE_SEARCH': False,
+    'ENABLE_COURSEWARE_SEARCH': True,
 
     # Dashboard search feature
-    'ENABLE_DASHBOARD_SEARCH': False,
+    'ENABLE_DASHBOARD_SEARCH': True,
 
     # log all information from cybersource callbacks
     'LOG_POSTPAY_CALLBACKS': True,
@@ -315,13 +315,13 @@ FEATURES = {
     'LICENSING': False,
 
     # Certificates Web/HTML Views
-    'CERTIFICATES_HTML_VIEW': False,
+    'CERTIFICATES_HTML_VIEW': True,
 
     # Batch-Generated Certificates from Instructor Dashboard
-    'CERTIFICATES_INSTRUCTOR_GENERATION': False,
+    'CERTIFICATES_INSTRUCTOR_GENERATION': True,
 
     # Course discovery feature
-    'ENABLE_COURSE_DISCOVERY': False,
+    'ENABLE_COURSE_DISCOVERY': True,
 
     # Setting for overriding default filtering facets for Course discovery
     # COURSE_DISCOVERY_FILTERS = ["org", "language", "modes"]
@@ -339,16 +339,16 @@ FEATURES = {
     'SHOW_BUMPER_PERIODICITY': 7 * 24 * 3600,
 
     # Special Exams, aka Timed and Proctored Exams
-    'ENABLE_SPECIAL_EXAMS': False,
+    'ENABLE_SPECIAL_EXAMS': True,
 
     # Enable OpenBadge support. See the BADGR_* settings later in this file.
-    'ENABLE_OPENBADGES': False,
+    'ENABLE_OPENBADGES': True,
 
     # Enable LTI Provider feature.
-    'ENABLE_LTI_PROVIDER': False,
+    'ENABLE_LTI_PROVIDER': True,
 
     # Show Language selector.
-    'SHOW_LANGUAGE_SELECTOR': False,
+    'SHOW_LANGUAGE_SELECTOR': True,
 
     # Write new CSM history to the extended table.
     # This will eventually default to True and may be
@@ -365,7 +365,7 @@ FEATURES = {
     # Display the 'Analytics' tab in the instructor dashboard for CCX courses.
     # Note: This has no effect unless ANALYTICS_DASHBOARD_URL is already set,
     #       because without that setting, the tab does not show up for any courses.
-    'ENABLE_CCX_ANALYTICS_DASHBOARD_URL': False,
+    'ENABLE_CCX_ANALYTICS_DASHBOARD_URL': True,
 
     # Set this to False to facilitate cleaning up invalid xml from your modulestore.
     'ENABLE_XBLOCK_XML_VALIDATION': True,
@@ -3013,7 +3013,7 @@ WIKI_REQUEST_CACHE_MIDDLEWARE_CLASS = "request_cache.middleware.RequestCache"
 SITE_ID = 1
 
 # dir containing all themes
-COMPREHENSIVE_THEME_DIRS = [REPO_ROOT / "themes"]
+COMPREHENSIVE_THEME_DIRS = ["/edx/app/edxapp/edx-platform/themes"]
 
 # Theme directory locale paths
 COMPREHENSIVE_THEME_LOCALE_PATHS = []

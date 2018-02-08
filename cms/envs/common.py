@@ -150,7 +150,7 @@ FEATURES = {
     'EMBARGO': False,
 
     # Turn on/off Microsites feature
-    'USE_MICROSITES': False,
+    'USE_MICROSITES': True,
 
     # Allow creating courses with non-ascii characters in the course id
     'ALLOW_UNICODE_COURSE_ID': False,
@@ -174,28 +174,28 @@ FEATURES = {
     'ENABLE_CONTENT_LIBRARIES': True,
 
     # Milestones application flag
-    'MILESTONES_APP': False,
+    'MILESTONES_APP': True,
 
     # Prerequisite courses feature flag
-    'ENABLE_PREREQUISITE_COURSES': False,
+    'ENABLE_PREREQUISITE_COURSES': True,
 
     # Toggle course entrance exams feature
-    'ENTRANCE_EXAMS': False,
+    'ENTRANCE_EXAMS': True,
 
     # Toggle platform-wide course licensing
     'LICENSING': False,
 
     # Enable the courseware search functionality
-    'ENABLE_COURSEWARE_INDEX': False,
+    'ENABLE_COURSEWARE_INDEX': True,
 
     # Enable content libraries search functionality
-    'ENABLE_LIBRARY_INDEX': False,
+    'ENABLE_LIBRARY_INDEX': True,
 
     # Enable course reruns, which will always use the split modulestore
     'ALLOW_COURSE_RERUNS': True,
 
     # Certificates Web/HTML Views
-    'CERTIFICATES_HTML_VIEW': False,
+    'CERTIFICATES_HTML_VIEW': True,
 
     # Teams feature
     'ENABLE_TEAMS': True,
